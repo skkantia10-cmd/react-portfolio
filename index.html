@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sujal Portfolio - React Assignment</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        body { font-family: sans-serif; margin: 0; text-align: center; background: #f0f2f5; }
+        nav { background: #282c34; padding: 15px; color: white; }
+        nav a { color: #61dafb; margin: 0 10px; text-decoration: none; font-weight: bold; }
+        .hero { padding: 50px; background: #61dafb; color: white; }
+        .content { padding: 40px; }
+        .card { background: white; margin: 10px auto; padding: 20px; border-radius: 10px; max-width: 300px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        footer { background: #282c34; color: white; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        function App() {
+            return (
+                <div>
+                    <nav>
+                        <a href="#">Home</a>
+                        <a href="#">Projects</a>
+                    </nav>
+                    <div className="hero">
+                        <h1>Hi, I'm Sujal</h1>
+                        <p>React Developer (Assignment)</p>
+                    </div>
+                    <div className="content">
+                        <h2>My Skills</h2>
+                        <div className="card">React.js</div>
+                        <div className="card">HTML/CSS</div>
+                        <div className="card">JavaScript</div>
+                    </div>
+                    <footer>
+                        <p>© 2025 Sujal Portfolio</p>
+                    </footer>
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>
+
